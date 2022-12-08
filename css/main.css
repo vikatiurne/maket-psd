@@ -1,0 +1,29 @@
+@import 'font.css';
+body{
+    background: gray;
+}
+ul,li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* MENU */
+.menu-bar{
+    padding: 20px 0;
+    color: #212121;
+    background-color: white;
+}
+.menu__item{
+    padding-left: 37px;
+}
+.menu__item a{
+    font-family: 'OpenSans-Regular';
+    font-size: 20px;
+    color: #212121;
+}
+/* при наведении меняется цвет ссылок на зеленый и убирается подчеркивание */
+.menu__item a:hover{
+text-decoration: none;
+color: #00897b;
+}
