@@ -1,29 +1,109 @@
 @import 'font.css';
-body{
-    background: gray;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.body {
+  font-family: 'OpenSans-Semibold';
 }
-ul,li{
-    display: block;
-    padding: 0;
-    margin: 0;
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
-/* MENU */
-.menu-bar{
-    padding: 20px 0;
-    color: #212121;
-    background-color: white;
+/* NAV */
+.menu-bar {
+  padding: 20px 0;
+  color: #212121;
+  background-color: white;
 }
-.menu__item{
-    padding-left: 37px;
+.menu__item {
+  padding-left: 37px;
 }
-.menu__item a{
-    font-family: 'OpenSans-Regular';
-    font-size: 20px;
-    color: #212121;
+.menu__item a {
+  font-size: 20px;
+  color: #212121;
 }
 /* при наведении меняется цвет ссылок на зеленый и убирается подчеркивание */
-.menu__item a:hover{
-text-decoration: none;
-color: #00897b;
+.menu__item a:hover {
+  text-decoration: none;
+  color: #00897b;
 }
+/* HEADER */
+.header > div {
+  text-align: center;
+  color: white;
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-position: 0 100%;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.container {
+    position: relative;
+}
+span{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 88%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    background: white;
+    border: 1px solid white;
+}
+.arrow1{
+    transform:translateX(-6px) rotate(45deg);
+}
+.arrow2{
+    transform:translateX(6px) rotate(-45deg);
+}
+.header{
+  margin-bottom: 125px;
+}
+.header__title {
+  font-size: 60px;
+}
+.header__text{
+  margin-bottom: 110px;
+  font-family: 'OpenSans-Regular';
+  font-size: 22px;
+}
+.button {
+  border: 2px solid white;
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #00897b;
+  color: white;
+  border-color: #00897b;
+}
+/* ABOUT US */
+.about {
+  color: #212121;
+  background-color: white;
+  text-align: center;
+}
+.about__title{
+  font-weight: bold;
+  font-size: 30px;
+}
+.about__subtitle{
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.about__text{
+  font-family: 'OpenSans-Regular';
+  font-size: 17px;
+  margin-bottom: 125px;
+}
+.about__img{
+ margin-bottom: 40px;
+}
+
