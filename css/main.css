@@ -29,7 +29,8 @@ li {
   color: #00897b;
 }
 /* HEADER */
-.header > div {
+.header{
+  position: relative;
   text-align: center;
   color: white;
   background-image: url(../img/header.png);
@@ -38,72 +39,113 @@ li {
   padding-top: 180px;
   padding-bottom: 180px;
 }
-.container {
-    position: relative;
+span {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 88%;
+  left: 50%;
+  width: 20px;
+  height: 3px;
+  background: white;
+  border: 1px solid white;
 }
-span{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 88%;
-    left: 50%;
-    width: 20px;
-    height: 3px;
-    background: white;
-    border: 1px solid white;
+.arrow1 {
+  transform: translateX(-6px) rotate(45deg);
 }
-.arrow1{
-    transform:translateX(-6px) rotate(45deg);
-}
-.arrow2{
-    transform:translateX(6px) rotate(-45deg);
-}
-.header{
-  margin-bottom: 125px;
+.arrow2 {
+  transform: translateX(6px) rotate(-45deg);
 }
 .header__title {
   font-size: 60px;
 }
-.header__text{
-  margin-bottom: 110px;
+.header__text {
+  padding-bottom: 110px;
   font-family: 'OpenSans-Regular';
   font-size: 22px;
 }
 .button {
-  border: 2px solid white;
   font-family: 'Roboto';
   font-size: 20px;
-  color: white;
   text-decoration: none;
   padding: 10px 25px;
   margin: 0 10px;
   transition: 0.3s;
 }
+.button_white {
+  border: 2px solid white;
+  color: white;
+}
 .button:hover {
+  border-color: #00897b;
   background-color: #00897b;
   color: white;
-  border-color: #00897b;
 }
 /* ABOUT US */
 .about {
+  padding-top: 125px;
+  padding-bottom: 80px;
   color: #212121;
   background-color: white;
   text-align: center;
 }
-.about__title{
+.about__title {
   font-weight: bold;
   font-size: 30px;
 }
-.about__subtitle{
-  margin-bottom: 25px;
+.about__subtitle {
+  padding-top: 25px;
   font-size: 20px;
 }
-.about__text{
+.about__text {
+  margin-bottom: 125px;
   font-family: 'OpenSans-Regular';
   font-size: 17px;
-  margin-bottom: 125px;
 }
-.about__img{
- margin-bottom: 40px;
+.about__textcard {
+  margin-bottom: 40px;
+  font-family: 'OpenSans-Regular';
+  font-size: 17px;
 }
-
+/* OUR SERVICES */
+.services {
+  padding-top: 180px;
+  padding-bottom: 110px;
+  color: #212121;
+  background-color: #e4fdf9;
+  text-align: center;
+}
+.infocard {
+  padding: 60px 60px;
+  margin-bottom: 20px;
+  background-color: rgb(253, 253, 253);
+  transition: 0.3s;
+}
+.infocard:hover {
+  color: white;
+  box-shadow: 0px 10px 12px -0px rgba(0, 0, 0, 0.3) ;
+  background-color: #00897b;
+}
+.infocard:hover > .icon {
+  display: none;
+}
+.icon_white {
+  display: none;
+  transition: 0.3s;
+  user-select: none;
+}
+.infocard:hover > .icon_white {
+  display: block;
+  margin: 0 auto;
+}
+.button_black {
+  font-family: 'OpenSans-Semibold';
+  border: 2px solid rgb(3, 3, 3);
+  color: rgb(3, 3, 3);
+  transition: 0.3s;
+}
+.infocard:hover .button_black{
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
