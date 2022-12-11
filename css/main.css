@@ -1,14 +1,16 @@
 @import 'font.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-.body {
-  font-family: 'OpenSans-Semibold';
-}
-ul,
-li {
-  display: block;
+*{
   padding: 0;
   margin: 0;
 }
+.body {
+  font-family: 'OpenSans-Semibold';
+}
+ul li {
+  display: block;
+}
+
 
 /* NAV */
 .menu-bar {
@@ -76,10 +78,11 @@ span {
   border: 2px solid white;
   color: white;
 }
-.button:hover {
+.button:hover, .focused {
   border-color: #00897b;
   background-color: #00897b;
   color: white;
+  cursor: pointer;
 }
 /* ABOUT US */
 .about {
@@ -92,6 +95,7 @@ span {
 .about__title {
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 40px;
 }
 .about__subtitle {
   padding-top: 25px;
@@ -138,7 +142,8 @@ span {
   display: block;
   margin: 0 auto;
 }
-.button_black {
+/* на кнопки для портфолио добавляем класс .focused, чтобы в js сделать подсветку после нажатия */
+.button_black{
   font-family: 'OpenSans-Semibold';
   border: 2px solid rgb(3, 3, 3);
   color: rgb(3, 3, 3);
@@ -149,3 +154,104 @@ span {
   color: white;
   cursor: pointer;
 }
+/* ПОРТФОЛИО */
+.portfolio {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  color: #212121;
+  text-align: center;
+}
+.portfolio .button{
+  border: 2px solid #00897b
+}
+.portfolio img{
+  position: relative;
+  margin-bottom: 30px;
+}
+.filter{
+  padding: 120px 0;
+}
+.show > div{
+  display: none;
+  padding: 120px 0;
+  justify-content: center;
+}
+.text{
+  display: none;
+}
+div[focus]:hover img, div[filter]:hover img{
+  /* затемнение карттинки на 50% */
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+div[focus], div[filter]{
+  position: relative;
+}
+div[focus]:hover .text, div[filter]:hover .text{
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 253, 253);
+  top: 40%;
+  left: 0;
+  z-index: 3;
+}
+ /* PRICE */
+.price {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  color: #212121;
+  background-color: #f0f1f1;
+  text-align: center;
+ }
+ .pricecard{
+  background-color: white;
+  padding-bottom: 65px;
+ }
+ .pricecard:hover{
+  box-shadow: 0 10px 10px 0 rgba(128, 128, 128, 0.443);
+ }
+ .pricecard__head{
+   padding-top: 50px;
+   padding-bottom: 65px;
+  background-image: url(../img/pricing_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 212px;
+  font-family: 'OpenSans-Regular';
+  color: white;
+ }
+ .pricecard__head p{
+  font-size: 25px;
+ }
+ .pricecard__head{
+  font-size: 50px;
+ }
+ .pricecard__head sub{
+  vertical-align: middle;
+  font-size: 17px;
+ }
+ .pricecard__head sup{
+  vertical-align: middle;
+  font-size: 30px;
+  /* убрать пробел между $ и цыфрой */
+  letter-spacing: -.36em;
+ }
+ .pricecard__body{
+  font-family: 'OpenSans-Light';
+  font-size: 17px;
+  color: #212121;
+ }
+ .pricecard__body p{
+  padding-left: -2rem;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 40px;
+  border-bottom: 1px solid #bfbfbf;
+  max-width: 178px;
+ }
+ .pricecard__body p:last-child{
+  margin-bottom: 65px;
+ }
+ 

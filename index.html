@@ -198,7 +198,201 @@
               <a class="button button_black">READ MORE</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- ПОРТФОЛИО -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <h2 class="about__title">Latest Works</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+          <!-- кнопкам записываем выдуманый атрибут filter, который позволит нам при нажатии кнопки показывать только те блоки с картинками у которых есть соответствующий атрибут. Также добавляем выдуманный атрибут val, который будем использовать в js для определения нажата кнопка или нет -->
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <a val="on" class="button button_black" filter="all">ALL</a>
+              <a val="off" class="button button_black" filter="wd"
+                >WEB DESIGN</a
+              >
+              <a val="off" class="button button_black" filter="ud"
+                >UI/UX DESIGN</a
+              >
+              <a val="off" class="button button_black" filter="moc">MOCKUPS</a>
+            </div>
+          </div>
+        </div>
+        <!-- показываем все картинки -->
+        <div class="row filter">
+          <div focus class="col-xl-4">
+            <img src="./img/item1.png" alt="" />
+            <div class="text">
+              <h3>Hand Watch</h3>
+              <p>web desing</p>
+            </div>
+          </div>
+          <div focus class="col-xl-4">
+            <img src="./img/item2.png" alt="" />
+            <div class="text">
+              <h3>One Day Pass</h3>
+              <p>web desing</p>
+            </div>
+          </div>
+          <div focus class="col-xl-4">
+            <img src="./img/item3.png" alt="" />
+            <div class="text">
+              <h3>Modal T-short</h3>
+              <p>ui/ux desing</p>
+            </div>
+          </div>
+          <div focus class="col-xl-4">
+            <img src="./img/item4.png" alt="" />
+            <div class="text">
+              <h3>Flask</h3>
+              <p>ui/ux desing</p>
+            </div>
+          </div>
+          <div focus class="col-xl-4">
+            <img src="./img/item5.png" alt="" />
+            <div class="text">
+              <h3>Eplemost</h3>
+              <p>mockups</p>
+            </div>
+          </div>
+          <div focus class="col-xl-4">
+            <img src="./img/item6.png" alt="" />
+            <div class="text">
+              <h3>The Kitchens</h3>
+              <p>mockups</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- то что будем показывать после нажатия кнопки (фильтр) -->
+        <div class="row show">
+          <div filter="wd" class="col-xl-6">
+            <img src="./img/item1.png" alt="" />
+            <div class="text">
+              <h3>Hand Watch</h3>
+              <p>web desing</p>
+            </div>
+          </div>
+          <div filter="wd" class="col-xl-6">
+            <img src="./img/item2.png" alt="" />
+            <div class="text">
+              <h3>One Day Pass</h3>
+              <p>web desing</p>
+            </div>
+          </div>
+          <div filter="ud" class="col-xl-6">
+            <img src="./img/item3.png" alt="" />
+            <div class="text">
+              <h3>Modal T-short</h3>
+              <p>ui/ux desing</p>
+            </div>
+          </div>
+          <div filter="ud" class="col-xl-6">
+            <img src="./img/item4.png" alt="" />
+            <div class="text">
+              <h3>The Kitchens</h3>
+              <p>mockups</p>
+            </div>
+          </div>
+          <div filter="moc" class="col-xl-6">
+            <img src="./img/item5.png" alt="" />
+            <div class="text">
+              <h3>Eplemost</h3>
+              <p>mockups</p>
+            </div>
+          </div>
+          <div filter="moc" class="col-xl-6">
+            <img src="./img/item6.png" alt="" />
+            <div class="text">
+              <h3>Hand Watch</h3>
+              <p>web desing</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <a val="on" class="button button_black" filter="all">VIEW ALL</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICE -->
+    <section class="price">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <h2 class="about__title">Pricing Plan</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- карточка№1 -->
+          <div class="col-xl-4">
+            <div class="pricecard">
+              <div class="pricecard__head">
+                <p>Free Trail</p>
+                <sup>$</sup> 00 <sub>per mounth</sub>
+              </div>
+              <div class="pricecard__body">
+                <p>30 Free Trail</p>
+                <p>5 Free Projects</p>
+                <p>PHP 5 Enabled</p>
+                <p>24/7 Suports</p>
+              </div>
+              <div class="price__footer">
+                <a class="button button_black">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- карточка№2 -->
+          <div class="col-xl-4">
+            <div class="pricecard">
+              <div class="pricecard__head">
+                <p>Basic</p>
+                <sup>$</sup> 50 <sub>per mounth</sub>
+              </div>
+              <div class="pricecard__body">
+                <p>30 Free Trail</p>
+                <p>5 Free Projects</p>
+                <p>PHP 5 Enabled</p>
+                <p>24/7 Suports</p>
+              </div>
+              <div class="price__footer">
+                <a class="button button_black">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- карточка№3 -->
+          <div class="col-xl-4">
+            <div class="pricecard">
+              <div class="pricecard__head">
+                <p>Ultimates</p>
+                <sup>$</sup> 99 <sub>per mounth</sub>
+              </div>
+              <div class="pricecard__body">
+                <p>30 Free Trail</p>
+                <p>5 Free Projects</p>
+                <p>PHP 5 Enabled</p>
+                <p>24/7 Suports</p>
+              </div>
+              <div class="price__footer">
+                <a class="button button_black">Order Now</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -206,14 +400,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous">
-
-      const button= document.querySelector('.infocard')
-      const icon = document.querySelector('.icon')
-      button.addEventListener('onclick', function(){
-        console.log('fjhghkhilj')
-        icon.classList.toggle('icon_hover')
-      })
-    </script>
+      crossorigin="anonymous"></script>
+    <script src="./js/jqwery.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
