@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- подключение стилей карусели -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="./css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/d31ca3bb6f.js"
-      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/@media.css">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +20,7 @@
       crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet" />
@@ -33,12 +39,12 @@
               d-flex(display:flex)- класс бутстрапа выстраиваем меню в линию
               justify-content-end  - контент контейнера смещаем вконец(справа)-->
             <ul class="memu d-flex justify-content-end">
-              <li class="menu__item"><a href="#">Home</a></li>
-              <li class="menu__item"><a href="#">About</a></li>
-              <li class="menu__item"><a href="#">Servising</a></li>
-              <li class="menu__item"><a href="#">Portfolio</a></li>
-              <li class="menu__item"><a href="#">Blog</a></li>
-              <li class="menu__item"><a href="#">Contact us</a></li>
+              <li class="menu__item"><a href="/">Home</a></li>
+              <li class="menu__item"><a href="#about">About</a></li>
+              <li class="menu__item"><a href="#service">Servising</a></li>
+              <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+              <li class="menu__item"><a href="#blog">Blog</a></li>
+              <li class="menu__item"><a href="#contact">Contact us</a></li>
               <li class="menu__item">
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
               </li>
@@ -65,7 +71,7 @@
       </div>
     </header>
     <!-- БЛОК About Us -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container bg-img">
         <div class="row justify-content-center">
           <div class="col-xl-7">
@@ -106,7 +112,7 @@
       </div>
     </section>
     <!-- БЛОК С КАРТОЧКАМИ Our Services -->
-    <section class="services">
+    <section class="services" id="service">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7">
@@ -202,7 +208,7 @@
       </div>
     </section>
     <!-- ПОРТФОЛИО -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-7">
@@ -272,7 +278,6 @@
             </div>
           </div>
         </div>
-
         <!-- то что будем показывать после нажатия кнопки (фильтр) -->
         <div class="row show">
           <div filter="wd" class="col-xl-6">
@@ -352,9 +357,7 @@
                 <p>PHP 5 Enabled</p>
                 <p>24/7 Suports</p>
               </div>
-              <div class="price__footer">
-                <a class="button button_black">Order Now</a>
-              </div>
+              <a class="button button_black">Order Now</a>
             </div>
           </div>
           <!-- карточка№2 -->
@@ -370,9 +373,7 @@
                 <p>PHP 5 Enabled</p>
                 <p>24/7 Suports</p>
               </div>
-              <div class="price__footer">
-                <a class="button button_black">Order Now</a>
-              </div>
+              <a class="button button_black">Order Now</a>
             </div>
           </div>
           <!-- карточка№3 -->
@@ -388,20 +389,390 @@
                 <p>PHP 5 Enabled</p>
                 <p>24/7 Suports</p>
               </div>
-              <div class="price__footer">
-                <a class="button button_black">Order Now</a>
-              </div>
+              <a class="button button_black">Order Now</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="team">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <h2 class="about__title">Our Team Member</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <!-- СЛАЙДЕР -->
+        <div class="row multiple-items justify-content-center">
+          <!-- карточка 1 -->
+          <div class="col-xl-4">
+            <img src="./img/team1.png" alt="" />
+            <h3 class="about__subtitle">John Doe</h3>
+            <p class="about__textcard team__text">General Manager</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- карточка 2 -->
+          <div class="col-xl-4">
+            <img src="./img/team2.png" alt="" />
+            <h3 class="about__subtitle">Alexa Biru</h3>
+            <p class="about__textcard team__text">Office Director</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- карточка 3 -->
+          <div class="col-xl-4">
+            <img src="./img/team3.png" alt="" />
+            <h3 class="about__subtitle">Ronobir sing</h3>
+            <p class="about__textcard team__text">Admin</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- карточка 1 -->
+          <div class="col-xl-4">
+            <img src="./img/team1.png" alt="" />
+            <h3 class="about__subtitle">John Doe</h3>
+            <p class="about__textcard team__text">General Manager</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- карточка 2 -->
+          <div class="col-xl-4">
+            <img src="./img/team2.png" alt="" />
+            <h3 class="about__subtitle">Alexa Biru</h3>
+            <p class="about__textcard team__text">Office Director</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- карточка 3 -->
+          <div class="col-xl-4">
+            <img src="./img/team3.png" alt="" />
+            <h3 class="about__subtitle">Ronobir sing</h3>
+            <p class="about__textcard team__text">Admin</p>
+            <div class="icons">
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="">
+                <span class="fa-stack fa-2x">
+                  <i class="fa-solid fa-square fa-stack-2x"></i>
+                  <i class="fab fa-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <h2 class="about__title">Blog</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <!-- добавили класс left что бы в css задать отзеркаливание этой строки -->
+          <div class="row left">
+            <div class="col-xl-6 col-md-6">
+              <img src="./img/blog1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="blog__text">
+                <a href="#">SEO Quis Vestibulum</a>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-calendar-days"></i>13.12.2022</span
+                  >
+                  <span><i class="fa-regular fa-file"></i>Development</span>
+                </div>
+                <p class="about__text">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- добавили класс right что бы в css задать отзеркаливание этой строки -->
+          <div class="row right">
+            <div class="col-xl-6 col-md-6">
+              <img src="./img/blog2.png" alt="" class="img-fluid" />
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="blog__text">
+                <a href="#">SEO Quis Vestibulum</a>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-calendar-days"></i>13.12.2022</span
+                  >
+                  <span><i class="fa-regular fa-file"></i>Development</span>
+                </div>
+                <p class="about__text">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- добавили класс left что бы в css задать отзеркаливание этой строки -->
+          <div class="row left">
+            <div class="col-xl-6 col-md-6">
+              <img src="./img/blog3.png" alt="" class="img-fluid"/>
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="blog__text">
+                <a href="#">SEO Quis Vestibulum</a>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-calendar-days"></i>13.12.2022</span
+                  >
+                  <span><i class="fa-regular fa-file"></i>Development</span>
+                </div>
+                <p class="about__text">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <a class="button button_black button__blog">MORE VIEW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <h2 class="about__title">Contact Us</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-around">
+          <div class="col-xl-3">
+            <div class="circle">
+              <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <p>Nobinagar savar,Dhaka Bangladesh</p>
+          </div>
+          <div class="col-xl-3">
+            <div class="circle">
+              <a href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <p>
+              +8801743331996 <br />
+              +8801928737807
+            </p>
+          </div>
+          <div class="col-xl-3">
+            <div class="circle">
+              <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p>
+              quickmasud@gmail.com <br />
+              quickmasud@yahoo.com
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center form">
+          <div class="col-xl-5">
+            <input type="text" placeholder="Your NAME" />
+          </div>
+          <div class="col-xl-5">
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="col-xl-10">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Write Massage"></textarea>
+          </div>
+          <!-- отступ до кнопки 8 столбцов offset-xl-8 -->
+          <div class="col-xl-2 offset-xl-8">
+            <button class="button">SEND</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="rules"> All rights Reserved © 2017</footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d31ca3bb6f.js"
+      crossorigin="anonymous"></script>
     <script src="./js/jqwery.js"></script>
     <script src="./js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- подключение карусели обязательно в самом конце -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
